@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function isPrime(number){
+        let isPrime = true
+        for ( let i = 2; i < number; i++ ){
+           if ( number % i === 0){
+               isPrime = false
+           }
+        }
+        return isPrime
+    }
+    for (let i =2; i < 10000; i++){
+        if (isPrime(i)){
+            console.log( i + " la SNT ")
+        }
+        else {
+            console.log( i + " ko la SNT")
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
