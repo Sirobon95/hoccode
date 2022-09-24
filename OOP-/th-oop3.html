@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id= "myCanvas" width="1388" height="886" style="border: 5px solid #d3d3d3;"></canvas>
+<script>
+    function Circle(x,y, radius){
+        this.x = x;
+        this.y = y;
+        this.radius = radius
+    }
+    function getRandomHex(){
+        return Math.floor(Math.random()*255);
+    }
+    function getRandomColor(){
+        let red = getRandomHex();
+        let green = getRandomHex();
+        let blue =getRandomHex();
+         return "rgb(" + red + ","+ blue + ","+ green + ")";
+    }
+    function createCircle(){
+        let bon = document.getElementById("myCanvas").getContext("2d");
+        let radius = Math.floor(Math.random() *100);
+        let color = getRandomColor();
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random() * window.innerHeight;
+        let tuan =  new Circle(x,y,radius);
+        bon.beginPath();
+        bon.arc(tuan.x,tuan.y,tuan.radius,0,2*Math.PI);
+        bon.fillStyle = color
+        bon.fill();
+    }
+    function sirobonbon(){
+        for(let i = 0; i < 20; i++){
+            createCircle();
+        }
+    }
+    sirobonbon();
+
+
+</script>
+</body>
+</html>
