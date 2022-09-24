@@ -1,0 +1,13 @@
+table{
+    color: #7b00ff;
+    border-collapse: collapse;
+}
+th {
+    background-color: coral;
+    color: aliceblue;
+    border: 1px solid
+}
+td {
+    text-align: center;
+    border: 1px solid
+}
