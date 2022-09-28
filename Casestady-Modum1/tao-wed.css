@@ -1,0 +1,21 @@
+header{
+    height: 150px;
+    background: cornsilk;
+}
+header img{
+    width: 300px
+}
+header ul {
+    list-style: none;
+}
+header ul li {
+    float: left;
+    line-height: 20px;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: blue;
+}
+.logo {
+    float: left;
+}
