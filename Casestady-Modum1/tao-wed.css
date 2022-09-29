@@ -1,21 +1,15 @@
-header{
-    height: 150px;
-    background: cornsilk;
+.col-lg-3 {
+    text-decoration: none;
 }
-header img{
-    width: 300px
-}
-header ul {
-    list-style: none;
-}
-header ul li {
+img{
+    width: 295px; height: 300px;
+    margin-right: 5px;
     float: left;
-    line-height: 20px;
-    margin-left: 10%;
-    margin-top: 5%;
-    font-size: 25px;
+}
+table{
+    background: #ffc107;
     color: blue;
 }
-.logo {
-    float: left;
+h1 {
+    background: #ffc107 ;
 }

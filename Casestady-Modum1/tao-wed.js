@@ -1,5 +1,4 @@
-let arr = ["img1.jpg","Bánh%20Xèo-%20Miền%20Nam.jpg", "ca-loc-nuong-trui.jpg", "gỏi%20cá%20bình%20định-9.jpg","img5Mì quảng 6.jpg"]
-let index = 1
+let arr = ["img1.jpg","img2.jpg","jmg3.jpg","img4.jpg","img5.jpg","img6.jpg.webp","img7.jpg.webp","img8-min.jpg.webp",]
 
 document.getElementById("slide").src = arr[0]
 
@@ -7,7 +6,7 @@ function changeImg() {
     let img = document.getElementById("slide")
     img.src = arr[index]
     index++
-    if (index === 3) {
+    if (index === 7) {
         index = 0
     }
 }
