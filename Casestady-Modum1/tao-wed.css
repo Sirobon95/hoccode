@@ -2,14 +2,27 @@
     text-decoration: none;
 }
 img{
-    width: 295px; height: 300px;
+    width: 296px; height: 300px;
     margin-right: 5px;
     float: left;
 }
 table{
+    margin-left: 300px;
     background: #ffc107;
     color: blue;
 }
-h1 {
-    background: #ffc107 ;
+
+div {
+    background: darkorchid  ;
+}
+
+
+a {
+    color: blueviolet;
+}
+h2 {
+    background: #ffc107;
+}
+div ul li {
+
 }
