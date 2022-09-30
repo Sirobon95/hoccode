@@ -10,7 +10,7 @@ table{
 }
 
 div {
-    background: rgb(197, 3, 60);
+    background: rgb(201, 13, 66);
 }
 
 
@@ -28,4 +28,7 @@ div ul li {
 
 .abc ul li {
     list-style-type: none;
+}
+.abc a {
+    text-decoration: none;
 }
