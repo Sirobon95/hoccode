@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    ood1{
+        width: 200px;
+        text-align: center;
+    }
+ </style>
+<body>
+    <div>
+        <table>
+          <tr>
+            <th>Amount</th>
+            <th>From Curency</th>
+            <th>To Curency</th>
+          </tr>
+          <tr>
+            <td><input type="number" name="amount" id="idmount"></td>
+            <td class="oo1"><select id="idcurrency">
+              <option value="23000">VND</option>
+              <option value="1">USD</option>
+            </select></td>
+            <td class="oo1"><select id="idtocurrency">
+              <option value="1" name="usd">USD</option>
+              <option value="23000"name="vnd">VND</option>
+            </select></td>
+            <td><button onclick="convert()">Convert</button></td>
+          </tr>
+        </table>
+      </div>
+      <div id="output"></div>
+      <script>
+        function convert() {
+          let value = document.getElementById('idmount').value;
+          let currency1 = document.getElementById('idcurrency').value;
+          let tocurrency1 = document.getElementById('idtocurrency').value;
+          console.log(currency1);
+          console.log(tocurrency1);
+          let output = value * (tocurrency1/currency1)
+          document.getElementById('output').innerText = "result: " +output;
+          let ood1 = document.getElementById('idtocurrency');
+          console.log(ood1);
+        }
+      
+      
+      </script>
+</body>
+</html>
