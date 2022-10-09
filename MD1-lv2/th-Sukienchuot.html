@@ -2,26 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <form>
-        <img id="bonBon" src=",lư./Ơ}
-        $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$444444" style="width : 50%">
-        <p>thit chuot ngon click vao</p>
-        <input type="button" value="Nhan vao day" onclick="good();">
+        <img id="bonBon" src="10-mon-hap-dan-tu-chuot-dong-5.jpg" style="width : 20%">
+        <p>Chuột Quay Lu Click vào là chén </p>
+        <input type="button" value="Nhan vao day" onclick="moveRight();">
     </form>
     <script>
         let mickey = null ;
         mickey = document.getElementById('bonBon');
         function good(){
-            mickey = documnet.getElementById('bonBon');
+            mickey = document.getElementById('bonBon');
             mickey.style.position = 'relative';
-            mickey.style.left = '0px'
+            mickey.style.left = '50px'
         }
         function moveRight(){
-            mickey.style.left = parseInt(mickey.style.left) + 15 + px ;
+            console.log('jj');
+            mickey.style.left = parseInt(mickey.style.left) + 15 + "px" ;
+            console.log(parseInt(mickey.style.left) + 15 +'px');
         }
         window.onload = good() ;
 
