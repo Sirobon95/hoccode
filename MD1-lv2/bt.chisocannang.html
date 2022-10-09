@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Tính chỉ số cân nặng của cơ thể </h1>
+    <tr>
+        <th>Nhập cân nặng (kg)</th>
+        <input type="text" id="weight">
+    </tr>
+    <br>
+    <br>
+    <tr>
+        <th>Nhập chiều cao (h)</th>
+        <input type="text" id="height">
+    </tr>
+    <br>
+    <br>
+    <button type="button" onclick="BMI()">Kiểm Tra</button>
+    <p id="bon1"></p>
+    <p id="bon2"></p>
+    <script>
+        function BMI(){
+        let weight = document.getElementById('weight').value ;
+        console.log("~ weight", weight)
+        let height = document.getElementById('height').value;
+        console.log("~ height", height)
+        let chiSo = (weight / (height**2)) ;
+            console.log(chiSo)  
+             if(chiSo < 18){
+                document.getElementById("bon1").innerHTML = 'underWeight_thieucan'
+             }
+             else if(chiSo < 25.0){
+                document.getElementById('bon1').innerHTML = 'Nomal_binhthuong'
+             }
+             else if(chiSo < 30.0){
+                document.getElementById('bon1').innerHTML = 'overWeight_thuacan';
+             }
+             else{
+                document.getElementById('bon1').innerHTML = 'overweight_beophi' ;    
+             }
+
+             document.getElementById('bon2').innerHTML = 'chiSo :' + chiSo
+        }
+       
+    </script>
+
+
+</body>
+</html>
