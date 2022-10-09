@@ -3,15 +3,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
 </head>
 <body>
- <div>
-    <table>
-        <tr>
-            <th></th>
-        </tr>
-    </table>
- </div>
+  <input type="text" placeholder="nhap tien" id="money">
+  <select name1="" id="bon1">
+    <option value="1">USD</Option>
+    <option value="23000">VND</option>
+  </select>
+  <select name2="" id="bon2">
+    <option value="23000">VND</option>
+    <option value="1">USD</option>
+  </select>
+  <button type="button" onclick="">Hien thi</button>
+  <div id="bonbon">Hien thi</div>
+  <script>
+    function change(){
+        let money = document.getElementById('money').innerHTML.value ;
+        let bon1 = document.getElementById('bon1').innerHTML.value ;
+        let bon2 = document.getElementById('bon2').innerHTML.value ;
+
+        document.getElementById('bonbon').innerHTML.value ;
+    }
+  </script>
 </body>
 </html>
