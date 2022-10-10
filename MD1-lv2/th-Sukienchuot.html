@@ -6,7 +6,7 @@
 </head>
 <body>
     <form>
-        <img id="bonBon" src="10-mon-hap-dan-tu-chuot-dong-5.jpg" style="width : 20%">
+        <img id="bonBon" src="10-mon-hap-dan-tu-chuot-dong-5.jpg" style="width :40%" height="40%">
         <p>Click vào Chuột Quay Lu là chén </p>
         <input type="button" value="Nhan vao day" onclick="moveRight();">
     </form>
@@ -16,11 +16,11 @@
         function good(){
             mickey = document.getElementById('bonBon');
             mickey.style.position = 'relative';
-            mickey.style.left = '50px'
+            mickey.style.left = '0px'
         }
         function moveRight(){
             console.log('jj');
-            mickey.style.left = parseInt(mickey.style.left) + 15 + "px" ;
+            mickey.style.left = parseInt(mickey.style.left) + 25 + "px" ;
             console.log(parseInt(mickey.style.left) + 15 +'px');
         }
         window.onload = good() ;
