@@ -1,89 +1,97 @@
 <html lang="en">
-<head>  
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
+
     </style>
-    
+
 </head>
+
 <body>
 
     <div id="bon" style="height:40px; width: 150px; border: 1px solid;"></div>
     <br>
-        <table>
-            <tr>
-                <td>
-                    <button type="button" name="bon1" value="1" onclick="inputValue(this.value)"> 1 </button>
-                </td>
-                <td>
-                    <button type="button" name="bon1" value="2" onclick="inputValue(this.value)">2</button>
-                </td>
-    
-                <td>
-                    <button type="button" name="bon1" value="3" onclick="inputValue(this.value)">3</button>
-                </td>
-                <td>
-                    <button type="button" name="bon2" value="+" onclick="inputValue(this.value)">+</button>
-            <tr>
-                <td>
-                    <button type="button" name="bon1" value="4" onclick="inputValue(this.value)">4</button>
-                </td>
-                <td>
-                    <button type="button" name="bon1" value="5" onclick="inputValue(this.value)">5</button>
-                </td>
-                <td>
-                    <button type="button" name="bon1" value="6" onclick="inputValue(this.value)">6</button>
-                </td>
-                <td>
-                    <button type="button" name="bon2" value="-" onclick="inputValue(this.value)">-</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="button" name="bon1" value="7" onclick="inputValue(this.value)"> 7 </button>
-                </td>
-                <td>
-                    <button type="button" name="bon1" value="8" onclick="inputValue(this.value)">8</button>
-                </td>
-                <td>
-                    <button type="button" name="bon1" value="9" onclick="inputValue(this.value)">9</button>
-                </td>
-                <td>
-                    <button type="button" name="bon2" value="*" onclick="inputValue(this.value)">*</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="button" name="bon2" value="AC" onclick="xoa();">  C</button>
-                </td>
-                <td>
-                    <button type="button" name="bon2" value="0" onclick="inputValue(this.value)">0</button>
-                </td>
-                <td>
-                    <button type="button" name="bon2" value="=" onclick="result()">=</button>
-                </td>
-                <td>
-                    <button type="button" name="bon2" value="/" onclick="inputValue(this.value)">/</button>
-                </td>
-            </tr>
-        </table>
-    
+    <table>
+        <tr>
+            <td>
+                <button type="button" name="bon1" value="1" onclick="inputValue(this.value)"> 1 </button>
+            </td>
+            <td>
+                <button type="button" name="bon1" value="2" onclick="inputValue(this.value)">2</button>
+            </td>
+
+            <td>
+                <button type="button" name="bon1" value="3" onclick="inputValue(this.value)">3</button>
+            </td>
+            <td>
+                <button type="button" name="bon2" value="+" onclick="inputValue(this.value)">+</button>
+        <tr>
+            <td>
+                <button type="button" name="bon1" value="4" onclick="inputValue(this.value)">4</button>
+            </td>
+            <td>
+                <button type="button" name="bon1" value="5" onclick="inputValue(this.value)">5</button>
+            </td>
+            <td>
+                <button type="button" name="bon1" value="6" onclick="inputValue(this.value)">6</button>
+            </td>
+            <td>
+                <button type="button" name="bon2" value="-" onclick="inputValue(this.value)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" name="bon1" value="7" onclick="inputValue(this.value)"> 7 </button>
+            </td>
+            <td>
+                <button type="button" name="bon1" value="8" onclick="inputValue(this.value)">8</button>
+            </td>
+            <td>
+                <button type="button" name="bon1" value="9" onclick="inputValue(this.value)">9</button>
+            </td>
+            <td>
+                <button type="button" name="bon2" value="*" onclick="inputValue(this.value)">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" name="bon2" value="C" onclick="C();">C</button>
+            </td>
+            <td>
+                <button type="button" name="bon2" value="0" onclick="inputValue(this.value)">0</button>
+            </td>
+            <td>
+                <button type="button" name="bon2" value="=" onclick="result()">=</button>
+            </td>
+            <td>
+                <button type="button" name="bon2" value="/" onclick="inputValue(this.value)">/</button>
+            </td>
+        </tr>
+    </table>
+
     <script>
         let save = '';
         let bonbon = document.getElementById('bon')
-        function inputValue (a){
+        function inputValue(a) {
             save += a
             console.log(save);
+            bonbon.innerText = save;
         }
-        function result(){
-            let ketqua = eval (save)
-            bonbon.innerHTML = ketqua
+        function result() {
+            let ketqua = eval(save)
+            bonbon.innerText = ketqua
 
+        }
+        function C() {
+            save = ""   
+            bonbon.innerText = save;
         }
 
     </script>
 </body>
+
 </html>

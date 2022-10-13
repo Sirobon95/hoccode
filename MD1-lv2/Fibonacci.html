@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIbonacci</title>
+</head>
+<body>
+    <p id="resuil"></p> 
+<script>
+  let a = 0;
+  let b = 1;
+  
+  let chuoi='' + a + '<br>' + b + '<br>'
+  for (let i = 0; i < 18  ; i++) {
+      c = b + a
+      a = b
+      b = c
+      chuoi += c + '<br>'
+        if (( c%5 )==0){
+          console.log('so chia het cho 5    ')
+        }
+        console.log(c)
+
+  }
+  document.getElementById('resuil').innerHTML= chuoi
+</script>
+</body>
+</html>
