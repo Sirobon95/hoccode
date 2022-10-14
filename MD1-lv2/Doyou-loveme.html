@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> DO YOU LOVE ME</h1>
+    <div id="siro"></div>
+    <input type="button" onclick="yesClick()" value="Yes oke">
+    <input type="button" value="No Oke" onmouseover="noHover()" id="bonbon" style="position: absolute;">
+    <script>
+        function yesClick() {
+            alert("I love you pakpak <3")
+        }
+        function noHover() {
+            let a = document.getElementById('bonbon');
+            a.style.top = Math.random()*500 + "px";
+            a.style.left = Math.random()*500 + "px";
+
+        }
+    </script>
+
+</body>
+
+</html>
