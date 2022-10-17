@@ -6,14 +6,38 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- cach 1 -->
     <script>
+       function setSNT (a){
+        for(i = 2; i < a; i++){
+            if(a % i == 0){
+                return false
+            }
+        }
+        return true
+       }
+       let number = prompt('nhap so')
+       count = 0
+       let a = 2;
+       do{  
+        if (setSNT(a)){
+            count++;
+            console.log(a);
+        }
+        a++
+       }while(count<number);
+    </script>    
+    <!-- ----------------------------------------------------- -->
+
+    <!-- cach 2 -->
+    <!-- <script>
         function hamsonguyento(a){
             let ketqua = true
             if ((a==1) || (a==0)){
                 ketqua = false
             }
-            let canbac = parseInt(Math.sqrt(a));
-            for (let i = 2; i <= canbac ; i++) {
+            let b = parseInt(Math.sqrt(a));
+            for (let i = 2; i <= b ; i++) {
                 if ((a%i)==0){
                     ketqua = false
                     break
@@ -21,24 +45,16 @@
             }
             return ketqua;
         }
-      
-      
         let songuyento = 0
         let hopso = 0
-      
+        let number = prompt('nhap so')
         do {
             if (hamsonguyento(hopso)){
                 songuyento += 1
                 document.write(hopso + '<br>')
             }
             hopso+=1
-      
-      
-        }while (songuyento<=20)
-      
-      
-      
-      
-      </script>
+        }while (songuyento <= number)
+      </script> -->
 </body>
 </html>
