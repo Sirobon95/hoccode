@@ -6,23 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <script>    
-     let x = [-3,5,1,3,2,10];
+    <script> 
+
+     let x = [7,8,5,2,6,4];
      let bon1= 0;
      let bon2 =  x.length-1 ;
     while (bon1 < bon2){
-        let bon3 = x[bon1]
-        x[bon1] = x[bon2]
-        x[bon2] = bon3   
-        bon1++
-        bon2--
+        let bon3 = x[bon1];
+        x[bon1] = x[bon2];
+        x[bon2] = bon3  ; 
+        bon1++ ;
+        bon2-- ;
     }
     console.log(x);
-
-
-
-
-
 
     </script>
 </body>

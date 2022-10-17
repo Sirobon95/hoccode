@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro game </title>
+</head>
+<body>
+    <h2>Caro Game Simple</h2>
+    <p id="caro"></p>
+    <input type="button" value="Change Value" onclick="changeValue"> 
+    <script>
+        let tt = document.getElementById('caro');
+        let m = [];
+        let v = '';
+        for(let i = 0 ; i < 10; i++){
+            m[i] =new Array(x,x,x,x,x,x,x,x,x,x);
+        }
+        for(let i = 0; i < 10; i++){
+            v += " <br>" ;
+            for (let j = 0; j < 10; j++){
+                v += m[i][j] + '&nbsp;&nbsp ;' ;
+            }
+        }
+        v += "<br><br><input type='button' value='Change Value' onclick='changeValue'>"
+    </script>
+</html>
