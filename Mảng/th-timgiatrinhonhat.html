@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Giá Trị Nhỏ Nhất Trong Mảng</title>
+</head>
+<body>
+<script>
+    let bonbon = [5,10,17,3,8,22];
+    let min = bonbon[0];
+    let index = 0;
+    for ( let i=0 ; i <=bonbon.length; i++){
+        if (bonbon[i] < min){
+         min = bonbon[i];
+         index = i;
+        }
+    }
+   alert (' min : ' + min + " vị trí : " + index );
+
+</script>
+</body>
+</html>
