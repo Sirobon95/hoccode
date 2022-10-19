@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+
+        }
+        #header{
+            background-color: lightskyblue;
+            width: 100%;
+            height: 500px;
+            position: center;
+            padding-left: 38%;
+            border: 1px solid black;
+
+        }
+        .b {
+            background-color: lightgreen;
+            color: #000;
+            border-color: white;
+            border-radius: 10px;
+        }
+
+        .nav {
+            width: 200px;
+
+        }
+
+        .nav2 {
+            width: 200px;
+            background-color: #c1c1c1;
+        }
+
+        .ta {
+            padding: 30px;
+        }
+
+        table {
+            padding: 0px ;
+        }
+    </style>        
+</head>
+<body>
+  <div id="header">
+    <h2><b>Add New Product</b></h2>
+    <input type="text " id="SP" placeholder="New product">
+    <button class="b" type="button" onclick="NameSP()" >Add</button>
+    <h2><b>Display All Product</b></h2>
+    <p><b>Productname</b></p>
+    <table id="add">
+    </table>
+</div>
+<script>
+    let arr = ["Sony Xperia","Samsung Galaxy","Nokia 6","Xiaomi Redmi Note 4","Apple Iphone 6s"]
+    function inBangSanPham(){
+        document.getElementById('add').innerHTML = ""
+        for (let i=0;i<arr.length;i++){
+            if (i%2==0) {
+                document.getElementById('add').innerHTML += "<tr class='ta'>"+"<td class='nav'>"+arr[i]+"</td>"+"" +
+                    "<td><button class=\"b\" type=\"button\" onclick= \"edit("+i+")\">Edit</button> </td>\n" +
+                    "<td><button class=\"b\" type=\"button\" onclick=\"Delete("+i+")\">Delete</button>  </td>"
+            } else {
+                document.getElementById('add').innerHTML += "<tr class='ta'>"+"<td class='nav2'>"+arr[i]+"</td>"+"" +
+                    "<td><button class=\"b\" type=\"button\" onclick= \"edit("+i+")\">Edit</button> </td>\n" +
+                    "<td><button class=\"b\" type=\"button\" onclick=\"Delete("+i+")\">Delete</button>  </td>"
+            }
+        }
+    }
+    inBangSanPham();
+    function NameSP() {
+        let a = document.getElementById('SP').value
+        arr.push(a)
+        inBangSanPham()
+    }
+    function Delete(i){
+        arr.splice(i, 1)
+        inBangSanPham()
+    }
+    function edit(i) {
+        let a =prompt('nhập tên mới')
+        arr.splice(i,1,a)
+        inBangSanPham()
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1> Add New Product </h1>
+        <input id="inputSanPham" type="text" placeholder="Nhập sản phẩm" > 
+        <button id="bon1" onclick="newProduct()">ADD</button>
+        <h1> Dislay All Product </h1>
+        <div></div>
+        <h3>Product Name</h3>
+
+        <button onclick="hienthi()">Hien thi</button>
+        <div id="bang"></div>
+    <script>
+        let arr = ["I Phone","Sam Sung","Galaxy","Soni","Repmi Note 10"];
+        function newProduct() {
+            let sp = document.getElementById("inputSanPham");
+            arr.push(sp.value);
+            hienthi();
+        }
+        function Delete(index){
+            arr.splice(index, 1);
+            hienthi() ;   
+        }
+        function Edit(index){
+            let sp = document.getElementById("inputSanPham");
+            arr[index] = sp.value
+            hienthi();
+        }   
+
+        function hienthi(){
+            let bon = "<table>"
+            for(i = 0; i < arr.length; i++){
+                bon += "<tr>" 
+                    + "<td>" + arr[i] + "</td>" 
+                    + "<td>" + "<button onclick='Edit(" + i + ")'>"+" Sua "+" </button>" + "</td>" 
+                    + "<td>" + "<button onclick='Delete(" + i + ")'>"+" Xoa "+"</button>" + "</td>" +
+                    "</tr>"
+            }
+            bon += "</table>"
+            document.getElementById("bang").innerHTML = bon
+        }
+
+
+    </script>
+</body>
+</html>

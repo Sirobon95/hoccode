@@ -6,11 +6,20 @@
 </head>
 <body>
 <script>
-    let cacngoisao= ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
-    let cacchomsao= ['UrsaMinor','Tarurus','Cygnus' ,'Lyra','Aquila','UrsaMajor','Leo']
-    function bonbon ('Vega'){
-
+    let cacngoisao= ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let cacchomsao= ['UrsaMinor','Tarurus','Cygnus' ,'Lyra','Aquila','UrsaMajor','Leo'];
+    let name = prompt();
+    function bonbon (){
+        for ( i=0; i < cacngoisao.length; i++){
+            if ( name == cacngoisao[i]){
+                return cacchomsao [i];
+                
+            }
+        }
+        alert(bonbon(i));
     }
+    
+    
 </script>
 </body>
 </html>

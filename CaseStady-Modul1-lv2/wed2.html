@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name: <input id="inputName" placeholder="Nhập tên">
+    <button onclick="add()">ADD</button>
+    <h2>Danh sách tên</h2>
+    <table id="show" width="400">
+    
+    </table>
+    </body>
+    </html>
+    
+    <script>
+        let names = ["Toàn", "Ngát"];
+        let divShow = document.getElementById("show");
+    
+        function show() {
+            let str = "";
+            for (let i = 0; i < names.length; i++) {
+                str += "<tr>"
+                str += "<td><h2>" + names[i] + "</h2></td>"
+                str += "<td><button onclick='xoa(" + i + ")'>Delete</button></td>"
+                str += "<td><button onclick='sua(" + i + ")'>Edit</button></td>"
+                str += "</tr>"
+                console.log(str)
+            }
+    
+            divShow.innerHTML = str;
+        }
+    
+        show();
+    
+        function add() {
+            let name = document.getElementById("inputName").value;
+            names.push(name);
+            show();
+        }
+    
+        function xoa(index) {
+            names.splice(index, 1);
+            show();
+        }
+
+        function sua(index){
+            let name1 = document.getElementById("inputName");
+            names[index] = name1.value ;   
+            show();
+        }
+    </script>
