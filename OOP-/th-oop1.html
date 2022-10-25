@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <script>
+        class person{
+            firstName;
+            lastName;
+            ege;
+            eyeColor;
+            
+            constructor(firstName,lastName,age,eyeColor){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.ege = ege ;
+                this.eyeColor = eyeColor
+            }
+            changeName(name){
+                this.lastName = name;
+                console.log(this);
+
+
+            }
+        }
+        
+        // function person(firstName,lastName,ege, eyeColor){
+        // this.firstName = fistName;
+        // this.lastName = lastName;
+        // this.ege = ege;
+        // this.eyeColor = eyeColor;
+        // this.changeNam = function(name){
+        //     this.lastName = name;
+        // }
+        // }
+        let myFather = new person('tuan','bon','3','blue');
+        let myMother = new person('minh','vy','2',"green");
+        console.log(myFather);
+        console.log(myMother);
+        
+        myFather.changeName('manh')
+        myMother.changeName('hoan')
+
+    </script>
+   
+</body>
+</html>

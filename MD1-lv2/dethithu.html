@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     Viết hàm sumOfListPrime() nhận vào một số nguyên x
+    //     hàm trả về giá trị là tổng các số nguyên tố từ 0 cho tới x.
+    //    let a = +prompt("nhap a")
+    //    let sum = 0
+    //    function sumof() {
+    //     for (let i = 1; i <= a; i++) {
+    //                  let count = 0
+    //            for (let j = 1; j <= a; j++) {
+    //                if (i % j === 0) {
+    //                    count++
+    //                }
+    //            }
+    //        if (count === 2) {
+    //                sum = sum + i
+    //            }
+    //        }
+    //        alert(sum)
+    //    }
+    //    sumof(a)
+    // --------------------------------------------
+    let sum1 = 0;
+    let a1 = +prompt('nhap so x')
+    function sumOfListPrime(x, sum) {
+        if (x <= 2) {
+            document.write(2)
+            sum = 2
+        } else {
+            for (let j = 2; j <= x; j++) {
+                let count = 0;
+                for (let i = 2; i < j; i++) {
+                    if (j % i == 0) {
+                        count = 1
+                    }
+                }
+                if (count == 0) {
+                    sum = sum + j
+                    document.write(j + " ")
+                }
+            }
+        }
+        document.write("<br>" + sum)
+    }
+    
+    sumOfListPrime(a1, sum1)
+    // -------------------------------------------------------------
+    // BÀI4
+
+    </script>
+</body>
+</html>

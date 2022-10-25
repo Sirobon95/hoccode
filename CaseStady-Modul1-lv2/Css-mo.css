@@ -1,0 +1,136 @@
+.TdHeader {
+  width: 15%;
+  text-align: center;
+  border: 1px solid;
+  font-size: 25px;
+}
+.TdHeader1 {  
+  text-align: center;
+  width: 17%;
+  border: 1px solid;
+  font-size: 25px;
+}
+/* ------------------------------ */
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+
+/* --------------------------------- */
+body {
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+    /* max-width: 480px; */ 
+    border-radius: 30px;
+  }
+
+.topnav {
+  margin-bottom: 130px;
+  width: 455px;
+  height: 613px;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;   
+  
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #1a04aa;
+  color: white;
+}
+/* --------------------------------------------------- */
+/* Css trình chiếu ảnh */
+* {box-sizing:border-box}
+
+/* vùng chứa trình chiếu */
+.slideshow-container {
+  margin-bottom: 128px;
+  position: relative;
+}
+
+/* ẩn hinh ảnh */
+.mySlides {
+  display: none;
+}
+/* văn bản phụ đề */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* văn ban số (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* dấu chấm dấu đầu dong chỉ báo
+ */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* mở ảnh dần */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
