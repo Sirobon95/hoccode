@@ -1,26 +1,15 @@
 
-#bon1 {
-  padding-right: 100px;
-}
-.col-lg-3{
-  padding-left:25px;
-  width: 350px;
-  height: 550px;
-  background-color: white;
-  font-size: 20px;
-  
-}
-.bon2 {
-  padding-right: 60px;
-}
-.bon3 {
-  padding-top: 40px;
-  padding-left: 70px;
-}
-
-h1{
-  padding-left: 70px;
+.TdHeader {
+  width: 15%;
+  text-align: center;
   font-size: 40px;
+  background-color: rgb(234, 251, 251);
+
+}
+.TdHeader1 {  
+  width: 17%;
+  text-align: center;
+ background-color:rgb(210, 233, 253);
 }
 * {box-sizing: border-box;}
 .topnav input[type=text] {
@@ -124,4 +113,88 @@ img {vertical-align: middle;}
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+/* ------------------------------------------------------------------------------------------------- */
+
+/* css nút Thêm sủa xóa */
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 30%;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+    border-radius: 30px;
+  }
+
+.topnav {
+  background-color: rgb(210, 233, 253);
+  margin-bottom: 0px;
+  height:610px;
+  width: 350px;
+ 
+  overflow: hidden;
+  background-color: rgb(234, 251, 251);
+  position: relative;   
+  
+}
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgb(210, 233, 253);
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+}
+
+.topnav a:hover {
+  background-color: deepskyblue;
+  color: rgb(250, 117, 1);
+}
+
+.active {
+  background-color: rgb(210, 233, 253);
+}
+.btn {  
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: deepskyblue;
 }

@@ -1,108 +1,42 @@
 .TdHeader {
   width: 15%;
   text-align: center;
-  border: 1px solid;
-  font-size: 25px;
+  font-size: 40px;
+  background-color: rgb(234, 251, 251);
+
 }
 .TdHeader1 {  
   text-align: center;
   width: 17%;
-  border: 1px solid;
-  font-size: 25px;
+ background-color:rgb(210, 233, 253);
 }
 /* ------------------------------ */
-.btn {
-  background-color: #ddd;
+.btn {  
   border: none;
-  color: black;
   padding: 16px 32px;
   text-align: center;
-  font-size: 16px;
+  font-size: 30px;
   margin: 4px 2px;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #3e8e41;
-  color: white;
+  background-color: deepskyblue;
 }
 
 /* --------------------------------- */
-body {
-  
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.mobile-container {
-    /* max-width: 480px; */ 
-    border-radius: 30px;
-  }
-
-.topnav {
-  margin-bottom: 130px;
-  width: 455px;
-  height: 613px;
-  overflow: hidden;
-  background-color: #333;
-  position: relative;   
-  
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 22px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0px;
-  top: 1px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #1a04aa;
-  color: white;
-}
+/*  */
 /* --------------------------------------------------- */
 /* Css trình chiếu ảnh */
 * {box-sizing:border-box}
 
-/* vùng chứa trình chiếu */
 .slideshow-container {
-  margin-bottom: 128px;
+  margin-bottom: 0px;
   position: relative;
 }
-
-/* ẩn hinh ảnh */
 .mySlides {
   display: none;
 }
-/* văn bản phụ đề */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* văn ban số (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -110,27 +44,139 @@ body {
   position: absolute;
   top: 0;
 }
-
-/* dấu chấm dấu đầu dong chỉ báo
- */
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  margin: 0 2px;  
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 /* mở ảnh dần */
 .fade {
   animation-name: fade;
-  animation-duration: 1.0s;
+  animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+/* ------------------------------------------------------------- */
+/* Đăng nhập */
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+/* .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+} */
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar {  
+  border-radius: 50%;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------Đăng ký  -------------------------------------------                                                    */
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity:1;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }

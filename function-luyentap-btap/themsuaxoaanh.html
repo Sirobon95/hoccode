@@ -18,6 +18,74 @@ Age: <input id="inputAge" placeholder="Nhập tuổi"><br>
 </html>
 
 <script>
+    class Student{
+        name;
+        age;
+        img;
+
+        constructor(name, age, img) {
+            this.name = name;
+            this.age = age;
+            this.img = img;
+        }
+    }
+
+    let ngat = new Student("Ngát", 18, "https://toanthaydinh.com/wp-content/uploads/2020/04/3438032811_deef1ec060_z.jpg");
+    let toan = new Student("Toàn", 20, "https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg"); 
+
+    let students = [ngat, toan];
+    let divShow = document.getElementById("show");
+
+    function show() {
+        let str = "";
+        for (let i = 0; i < students.length; i++) {
+            str += `<tr>
+                        <td>${students[i].name}</td>
+                        <td>${students[i].age}</td>
+                        <td><img src="${students[i].img}" width="200" height="150"></td>
+                        <td><button onclick="edit(${i})">Edit</button></td>
+                        <td><button onclick="xoa(${i})">Delete</button></td>
+                    </tr>`
+        }
+        divShow.innerHTML = str;
+    }
+    show();
+
+    function edit(index) {
+        let name = prompt("Nhập name muốn sửa");
+        let img = prompt("Nhập img muốn sửa");
+        let age = prompt("Nhập age muốn sửa");
+        let newObj = new Student(name,age,img);
+        students.splice(index, 1, newObj);
+        show();
+    }
+
+    function add() {
+        let name = document.getElementById("inputName").value;
+        let img = document.getElementById("inputImg").value;
+        let age = document.getElementById("inputAge").value;
+        let newObj = new Student(name,age,img);
+        students.push(newObj);
+        show();
+    }
+
+    function xoa(index) {
+        students.splice(index, 1,);
+        show();
+    }
+</script>
+<!-- Name: <input id="inputName" placeholder="Nhập tên"><br>
+Img: <input id="inputImg" placeholder="Nhập ảnh"><br>
+Age: <input id="inputAge" placeholder="Nhập tuổi"><br>
+<button onclick="add()">ADD</button>
+<h2>Danh sách tên</h2>
+<table id="show" width="400">
+
+</table>
+</body>
+</html>
+
+<script>
     let names = [["Ngát", 18, "https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg"],
                 ["Toàn", 20, "https://haycafe.vn/wp-content/uploads/2022/01/hinh-anh-que-huong-dep-binh-di.jpg"]];
     let divShow = document.getElementById("show");
@@ -57,6 +125,6 @@ Age: <input id="inputAge" placeholder="Nhập tuổi"><br>
         names.splice(index, 1);
         show();
     }
-</script>
+</script> -->
 </body>
 </html>

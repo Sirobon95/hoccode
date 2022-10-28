@@ -1,4 +1,4 @@
-<html lang="en">
+  <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,6 +6,7 @@
     <title> Tạo Wed </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Css-mo.css">
+    <link rel="stylesheet" href="css-spham.css">
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 rel="stylesheet"
@@ -34,15 +35,15 @@ rel="stylesheet"
             </td>
             <td class="TdHeader">
             </td>
-            <td class="TdHeader">
+            <!-- <td class="TdHeader">
               <a href="file:///C:/Users/admin/Desktop/hoccode/hoccode/CaseStady-Modul1-lv2/login.html">
                  <button style="color:red; font-size: 15px;" class="btn">Đăng nhập</button>
               </a>
                
-            </td>
+            </td> -->
             <td class="TdHeader">
               <a href="file:///C:/Users/admin/Desktop/hoccode/hoccode/CaseStady-Modul1-lv2/sign-up.html">
-                <button style="color:red; font-size: 15px;" class="btn">Đăng ký</button>
+                <button style="color:red; font-size: 15px;" class="btn">Đăng xuất</button>
               </a>
                 
             </td>
@@ -51,30 +52,170 @@ rel="stylesheet"
     <table style="width: 100% ; height: 45px; font-size: 15px; ">
         <tr>
             <td class="TdHeader1">
-                <button style="color:red; font-size: 15px;" class="btn">Trang chủ</button>
+                <a href="file:///C:/Users/admin/Desktop/hoccode/hoccode/CaseStady-Modul1-lv2/Case-wed1.html">
+                    <button style="color:red; font-size: 15px;" class="btn">Trang chủ</button>
+                </a>
             </td>
             <td class="TdHeader1">
-                <button style="color:red; font-size: 15px;" class="btn">Sản phẩm</button>
+                <a href="file:///C:/Users/admin/Desktop/hoccode/hoccode/CaseStady-Modul1-lv2/sanpham.html">
+                    <button style="color:red; font-size: 15px;" class="btn">Sản phẩm</button>
+                </a>
+                
             </td>
             <td class="TdHeader1">
+                <a href="">
                 <button style="color:red; font-size: 15px;" class="btn">Giới thiệu</button>
+                </a>
             </td>
             <td class="TdHeader1">
+                <a href="file:///C:/Users/admin/Desktop/hoccode/hoccode/CaseStady-Modul1-lv2/kho-add-edit-delete.html">
                 <button style="color:red; font-size: 15px;" class="btn">Quản lý kho</button>
+                </a>
             </td>
             <td class="TdHeader1">
+                <a href="">
                 <button style="color:red; font-size: 15px;" class="btn">Khuyến mại hót</button>
+            </a>
             </td>
             <td class="TdHeader1">
+                <a href="">
                 <button style="color:red; font-size: 15px;" class="btn">Hàng bán chạy</button>
+            </a>
             </td>
-            
-            
-        </tr>
-    </table>
-    <table>
-      <img style="width: 1550px; height: 660px;" src="ngotho12.jpg" alt="">
-    </table>
+        </tr> 
+     </table>
+     <table style="background-color: rgb(255, 235, 19); margin-left: 10px;">
+      <h4 style="margin-top: 20px ; color: #f50a0a ; font-size: 25px ; text-align: center ;"> Shopping    
+        <span id="numberDot" class="position-absolute start 10 translate-middle badge rounded-pill bg-danger">0</span>
+        <svg id="addHang" xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+      </svg> </h4>
+      
+      <tr style="float: left;width: 300px;height: 250px;">
+        <td>
+          <div class="container">
+            <img src="ngot2.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">
+                <button  onclick="mua1()"id="addGiohang">Chọn mua</button>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr style="float: left;width: 300px;height: 250px;">
+        <td>
+          <div class="container">
+            <img src="bsn5.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">
+                <button  onclick="mua2()"id="addGiohang">Chọn mua</button>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr style="float: left; width: 300px;height: 250px;">
+        <td >
+          <div class="container">
+            <img src="bngot66.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">
+                <button  onclick="mua3()"id="addGiohang">Chọn mua</button>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr style="float: left; width: 300px;height: 250px;">
+        <td>
+         <div class="container">
+           <img src="bn5.jpg" alt="Avatar" class="image">
+           <div class="overlay">
+             <div class="text">
+              <button  onclick="mua4()" id="addGiohang"> Chọn mua</button>
+             </div>
+           </div>
+         </div>
+        </td>
+      </tr>
+      <tr style="float: left; width: 300px;height: 250px;">
+        <td>
+         <div class="container">
+           <img src="bn1.jpg" alt="Avatar" class="image">
+           <div class="overlay">
+             <div class="text">
+              <button  onclick="mua5()" id="addGiohang">Chọn mua</button>
+            </div>
+           </div>
+         </div>
+        </td>
+      </tr>     
+   </table>
+   <table style="background-color: rgb(255, 235, 19);margin-left: 10px;">
+    <tr style="float: left;width: 300px;height: 250px;">
+      <td>
+        <div class="container">
+          <img src="bfooter10.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">
+              <button  onclick="mua6()" id="addGiohang">Chọn mua</button>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr style="float: left;width: 300px;height: 250px;">
+      <td>
+        <div class="container">
+          <img src="liza4.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">
+              <button  onclick="mua7()" id="addGiohang">Chọn mua</button>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr style="float: left; width: 300px;height: 250px;">
+      <td >
+        <div class="container">
+          <img src="bkem1.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">
+              <button  onclick="mua8()" id="addGiohang">Chọn mua</button>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr style="float: left; width: 300px;height: 250px;">
+      <td>
+       <div class="container">
+         <img src="bfooter9.jpg" alt="Avatar" class="image">
+         <div class="overlay">
+           <div class="text">
+            <button  onclick="mua9()" id="addGiohang"> Chọn mua </button>
+           </div>
+         </div>
+       </div>
+      </td>
+    </tr>
+    <tr style="float: left; width: 300px;height: 250px;">
+      <td>
+       <div class="container">
+         <img src="bfooter8.jpg" alt="Avatar" class="image">
+         <div class="overlay">
+           <div class="text">
+            <button  onclick="mua10()" id="addGiohang">Chọn mua </button>
+          </div>
+         </div>
+       </div>
+      </td>
+    </tr>     
+   </table>
+  </table>
+  
     <!-- <table style="height: 400px;">
         <tr style="height: 400px;">
             <td style="height: 400px;">
@@ -206,6 +347,7 @@ rel="stylesheet"
     </table>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 <script src="Case-Js.js"></script>
+<script src="sp-sp.js"></script>
 
   </body>
   </html>
